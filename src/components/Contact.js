@@ -4,7 +4,7 @@ function Contact() {
 	return (
 		<div>
 			<h2>Contact Me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			<p>Donec suscipit, nulla quis luctus eleifend, est mi tincidunt libero, sed posuere metus odio eget odio. Vivamus rhoncus pellentesque eleifend.</p>
 		</div>
 	);
 }
