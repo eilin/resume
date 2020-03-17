@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
-import { Users, About, Navigation } from './components';
+import { Home, Users, About, Navigation } from './components';
 
 const Notfound = () => <h1>Not found</h1>
 
@@ -13,7 +12,7 @@ const routing = (
 	<Router>
 		<Navigation />
 		<Switch>
-			<Route exact path="/" component={App} />
+			<Route exact path="/" component={Home} />
 			<Route path="/users" component={Users} />
 			<Route path="/about" component={About} />
 			<Route path="/resume"><Redirect to="/" /></Route>
