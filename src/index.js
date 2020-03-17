@@ -4,32 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Users from './users';
 import About from './about';
-import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import Navigation from './navigation';
 
 const Notfound = () => <h1>Not found</h1>
 
-
 const routing = (
 	<Router>
-		<Navbar bg="dark" variant="dark">
-			<Navbar.Brand href="/">APP</Navbar.Brand>
-			<Nav>
-				<LinkContainer exact to="/">
-					<Nav.Link>Home</Nav.Link>
-				</LinkContainer>
-				<LinkContainer to="/users">
-					<Nav.Link>Users</Nav.Link>
-				</LinkContainer>
-				<LinkContainer to="/about">
-					<Nav.Link>About</Nav.Link>
-				</LinkContainer>
-			</Nav>
-		</Navbar>
-
+		<Navigation />
 		<Switch>
 			<Route exact path="/" component={App} />
 			<Route path="/users" component={Users} />
