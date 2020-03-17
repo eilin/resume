@@ -5,9 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
-import Users from './users';
-import About from './about';
-import Navigation from './navigation';
+import { Users, About, Navigation } from './components';
 
 const Notfound = () => <h1>Not found</h1>
 
@@ -19,7 +17,6 @@ const routing = (
 			<Route path="/users" component={Users} />
 			<Route path="/about" component={About} />
 			<Route path="/resume"><Redirect to="/" /></Route>
-			
 			<Route component={Notfound} />
 		</Switch>
 	</Router>
