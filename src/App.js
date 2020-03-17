@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import GlobalStyle from './styles/Global';
-import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Summary, Skills, Experience, Contact, Navigation } from './components';
 
 const Notfound = () => <h1>Not found</h1>

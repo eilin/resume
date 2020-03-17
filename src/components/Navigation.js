@@ -53,10 +53,10 @@ function Navigation(props) {
 				<FlexContainer>
 					<Navbar.Brand href="/resume">Edward Lin | Résumé</Navbar.Brand>
 					<NavLinks>
-					<NavBarLink to="/" text="Summary"/>
-					<NavBarLink to="/skills" text="Skills"/>
-					<NavBarLink to="/experience" text="Experience"/>
-					<NavBarLink to="/contact" text="Contact"/>
+						<NavBarLink to="/" text="Summary"/>
+						<NavBarLink to="/skills" text="Skills"/>
+						<NavBarLink to="/experience" text="Experience"/>
+						<NavBarLink to="/contact" text="Contact"/>
 					</NavLinks>
 					<BurgerWrapper>
             <BurgerMenu
