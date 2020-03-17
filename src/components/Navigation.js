@@ -11,11 +11,14 @@ function Navigation() {
 				<LinkContainer exact to="/">
 					<Nav.Link>Home</Nav.Link>
 				</LinkContainer>
-				<LinkContainer to="/users">
-					<Nav.Link>Users</Nav.Link>
+				<LinkContainer to="/skills">
+					<Nav.Link>Skills</Nav.Link>
 				</LinkContainer>
-				<LinkContainer to="/about">
-					<Nav.Link>About</Nav.Link>
+				<LinkContainer to="/experience">
+					<Nav.Link>Experience</Nav.Link>
+				</LinkContainer>
+				<LinkContainer to="/contact">
+					<Nav.Link>Contact</Nav.Link>
 				</LinkContainer>
 			</Nav>
 		</Navbar>
