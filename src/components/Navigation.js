@@ -2,6 +2,7 @@ import React from 'react';
 
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import BurgerMenu from './BurgerMenu';
 import styled from "styled-components";
 
 const FlexContainer = styled.div`
@@ -37,7 +38,14 @@ const NavLinks = styled(Nav)`
   }
 `;
 
-function Navigation() {
+const BurgerWrapper = styled.div`
+  margin: auto 0;
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+function Navigation(props) {
 	return (
 		<Container>
 			<Navbar bg="dark" variant="dark">
@@ -57,6 +65,12 @@ function Navigation() {
 							<Nav.Link>Contact</Nav.Link>
 						</LinkContainer>
 					</NavLinks>
+					<BurgerWrapper>
+            <BurgerMenu
+              navbarState={props.navbarState} 
+              handleNavbar={props.handleNavbar}
+            />
+          </BurgerWrapper>
 				</FlexContainer>
 			</Navbar>
 		</Container>
