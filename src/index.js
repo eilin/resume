@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
-import { Home, Skills, Experience, Contact, Navigation } from './components';
+import { Summary, Skills, Experience, Contact, Navigation } from './components';
 
 const Notfound = () => <h1>Not found</h1>
 
@@ -12,7 +12,7 @@ const routing = (
 	<Router>
 		<Navigation />
 		<Switch>
-			<Route exact path="/" component={Home} />
+			<Route exact path="/" component={Summary} />
 			<Route path="/skills" component={Skills} />
 			<Route path="/experience" component={Experience} />
 			<Route path="/contact" component={Contact} />

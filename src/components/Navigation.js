@@ -6,10 +6,10 @@ import { Navbar, Nav } from 'react-bootstrap';
 function Navigation() {
 	return (
 		<Navbar bg="dark" variant="dark">
-			<Navbar.Brand href="/">APP</Navbar.Brand>
+			<Navbar.Brand href="/">Edward Lin | Résumé</Navbar.Brand>
 			<Nav>
 				<LinkContainer exact to="/">
-					<Nav.Link>Home</Nav.Link>
+					<Nav.Link>Summary</Nav.Link>
 				</LinkContainer>
 				<LinkContainer to="/skills">
 					<Nav.Link>Skills</Nav.Link>
