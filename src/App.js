@@ -18,7 +18,7 @@ class App extends Component {
 	render() {
 		return (
 			<>
-				<Router>
+				<Router basename='/resume'>
 					<Navigation
 						navbarState={this.state.navbarOpen}
 						handleNavbar={this.handleNavbar}
@@ -28,7 +28,6 @@ class App extends Component {
 						<Route path="/skills" component={Skills} />
 						<Route path="/experience" component={Experience} />
 						<Route path="/contact" component={Contact} />
-						<Route path="/resume"><Redirect to="/" /></Route>
 						<Route component={Notfound} />
 					</Switch>
 				</Router>

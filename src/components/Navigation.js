@@ -51,7 +51,7 @@ function Navigation(props) {
 		<Container>
 			<Navbar bg="dark" variant="dark">
 				<FlexContainer>
-					<Navbar.Brand href="/">Edward Lin | Résumé</Navbar.Brand>
+					<Navbar.Brand href="/resume">Edward Lin | Résumé</Navbar.Brand>
 					<NavLinks>
 					<NavBarLink to="/" text="Summary"/>
 					<NavBarLink to="/skills" text="Skills"/>
