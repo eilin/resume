@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import Users from './users';
 import About from './about';
 import Navigation from './navigation';
@@ -18,6 +18,8 @@ const routing = (
 			<Route exact path="/" component={App} />
 			<Route path="/users" component={Users} />
 			<Route path="/about" component={About} />
+			<Route path="/resume"><Redirect to="/" /></Route>
+			
 			<Route component={Notfound} />
 		</Switch>
 	</Router>
