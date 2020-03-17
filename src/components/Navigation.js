@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import styled from "styled-components";
 import BurgerMenu from './BurgerMenu';
 import CollapseMenu from './CollapseMenu';
+import NavBarLink from './NavBarLink';
 
 const FlexContainer = styled.div`
   max-width: 120rem;
@@ -53,18 +53,10 @@ function Navigation(props) {
 				<FlexContainer>
 					<Navbar.Brand href="/">Edward Lin | Résumé</Navbar.Brand>
 					<NavLinks>
-						<LinkContainer exact to="/">
-							<Nav.Link>Summary</Nav.Link>
-						</LinkContainer>
-						<LinkContainer to="/skills">
-							<Nav.Link>Skills</Nav.Link>
-						</LinkContainer>
-						<LinkContainer to="/experience">
-							<Nav.Link>Experience</Nav.Link>
-						</LinkContainer>
-						<LinkContainer to="/contact">
-							<Nav.Link>Contact</Nav.Link>
-						</LinkContainer>
+					<NavBarLink to="/" text="Summary"/>
+					<NavBarLink to="/skills" text="Skills"/>
+					<NavBarLink to="/experience" text="Experience"/>
+					<NavBarLink to="/contact" text="Contact"/>
 					</NavLinks>
 					<BurgerWrapper>
             <BurgerMenu

@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
-import { Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap'
-
+import NavBarLink from './NavBarLink';
 
 const CollapseMenu = (props) => {
 	const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
@@ -18,19 +16,10 @@ const CollapseMenu = (props) => {
 			}}
 			>
 				<NavLinks>
-					{/* TODO try to componentize the links list */}
-					<LinkContainer exact to="/">
-						<Nav.Link onClick={props.handleNavbar}>Summary</Nav.Link>
-					</LinkContainer>
-					<LinkContainer to="/skills">
-						<Nav.Link onClick={props.handleNavbar}>Skills</Nav.Link>
-					</LinkContainer>
-					<LinkContainer to="/experience">
-						<Nav.Link onClick={props.handleNavbar}>Experience</Nav.Link>
-					</LinkContainer>
-					<LinkContainer to="/contact">
-						<Nav.Link onClick={props.handleNavbar}>Contact</Nav.Link>
-					</LinkContainer>
+					<NavBarLink to="/" onClick={props.handleNavbar} text="Summary"/>
+					<NavBarLink to="/skills" onClick={props.handleNavbar} text="Skills"/>
+					<NavBarLink to="/experience" onClick={props.handleNavbar} text="Experience"/>
+					<NavBarLink to="/contact" onClick={props.handleNavbar} text="Contact"/>
 				</NavLinks>
 			</CollapseWrapper>
 		);
