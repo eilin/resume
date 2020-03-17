@@ -2,8 +2,9 @@ import React from 'react';
 
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import BurgerMenu from './BurgerMenu';
 import styled from "styled-components";
+import BurgerMenu from './BurgerMenu';
+import CollapseMenu from './CollapseMenu';
 
 const FlexContainer = styled.div`
   max-width: 120rem;
@@ -73,6 +74,10 @@ function Navigation(props) {
           </BurgerWrapper>
 				</FlexContainer>
 			</Navbar>
+			<CollapseMenu 
+        navbarState={props.navbarState} 
+        handleNavbar={props.handleNavbar}
+      />
 		</Container>
 	);
 }
