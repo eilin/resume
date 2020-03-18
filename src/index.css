@@ -24,3 +24,8 @@ a {
 	text-align: left;
 	width: 100%;
 }
+
+.dummy-align {
+	/* approximately enough to offset the navbar header */
+	width: 200px;
+}

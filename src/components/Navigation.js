@@ -10,12 +10,13 @@ const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
 	height: 5rem;
+	margin: 0 auto;
 `;
 
 const NavLinks = styled(Nav)`
   justify-self: end;
   list-style-type: none;
-  margin: auto 0;
+	margin: auto 0;
   
   & a {
     color: #dfe6e9;
@@ -55,14 +56,14 @@ function Navigation(props) {
 					</div>
 				</Navbar.Brand>
 				<FlexContainer>
-					<NavLinks className="float-right">
+					<NavLinks>
 						<NavBarLink to="/" text="Summary"/>
 						<NavBarLink to="/skills" text="Skills"/>
 						<NavBarLink to="/experience" text="Experience"/>
 						<NavBarLink to="/contact" text="Contact"/>
 					</NavLinks>
-					
 				</FlexContainer>
+				<div className="dummy-align"/>
 				<BurgerWrapper>
 					<BurgerMenu
 						navbarState={props.navbarState} 
