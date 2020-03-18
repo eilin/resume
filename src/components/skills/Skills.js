@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button, ButtonGroup, Container } from 'react-bootstrap';
 import SkillGroup from './SkillGroup';
 
 class Skills extends Component {
@@ -31,13 +31,13 @@ class Skills extends Component {
 		}
 
 		return (
-			<>
-				<ButtonGroup aria-label="Basic example">
+			<Container id='skills-ctnr'>
+				<ButtonGroup id='skills-btn-group'>
 					<Button variant={this.buttonVariant("techLabel")} onClick={() => this.switchGroup("techLabel")}>Technology</Button>
 					<Button variant={this.buttonVariant("level")} onClick={() => this.switchGroup("level")}>Proficiency</Button>
 				</ButtonGroup>
 				{skillGroups}
-			</>
+			</Container>
 		);
 	}
 }

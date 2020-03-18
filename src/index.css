@@ -29,3 +29,11 @@ a {
 	/* approximately enough to offset the navbar header */
 	width: 200px;
 }
+
+#skills-btn-group {
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
