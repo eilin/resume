@@ -2,24 +2,20 @@ import React, { Component } from 'react';
 import SkillGroup from './SkillGroup';
 
 class Skills extends Component {
-	state = {
-		groupBy: 'techLabel'
-	}
-
-	// TODO move data out
-	techLabelMap = {
-		"language": "Programming Languages",
-		"framework": "Frameworks",
-		"testing": "Testing",
-		"database": "Database Systems",
-		"misc": "Miscellaneous"
+	constructor(props) {
+		super(props)
+		this.state = {
+			groupBy: 'techLabel',
+			resumeData: require('../../data/resume.json'),
+			skillLabelMap: require('../../data/labelMap.json')['skill']
+		}
 	}
 
 	render() {
-		const resumeData = require('../../data/resume.json');
-		const skills = resumeData.skills;
+		
+		const skills = this.state.resumeData.skills;
 		const skillGroups = [];
-		for ( const [tech,value] of Object.entries( this.techLabelMap ) ) {
+		for ( const [tech,value] of Object.entries( this.state.skillLabelMap ) ) {
 			skillGroups.push(<SkillGroup key={tech} skills={skills} groupBy={this.state.groupBy} groupKey={tech} label={value} />);
 		}
 

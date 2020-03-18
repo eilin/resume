@@ -1,0 +1,9 @@
+{
+	"skill": {
+		"language": "Programming Languages",
+		"framework": "Frameworks",
+		"testing": "Testing",
+		"database": "Database Systems",
+		"misc": "Miscellaneous"
+	}
+}
