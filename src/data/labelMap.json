@@ -1,9 +1,16 @@
 {
-	"skill": {
+	"techLabel": {
 		"language": "Programming Languages",
 		"framework": "Frameworks",
 		"testing": "Testing",
 		"database": "Database Systems",
 		"misc": "Miscellaneous"
+	},
+	"level": {
+		"expert": "Expert",
+		"proficient": "Proficient",
+		"competent": "Competent",
+		"familiar": "Familiar",
+		"novice": "Novice"
 	}
 }

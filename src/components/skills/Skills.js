@@ -5,18 +5,18 @@ class Skills extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			groupBy: 'techLabel',
+			groupBy: 'level',
 			resumeData: require('../../data/resume.json'),
-			skillLabelMap: require('../../data/labelMap.json')['skill']
+			labelMap: require('../../data/labelMap.json')
 		}
 	}
 
 	render() {
-		
+		let labels = this.state.labelMap[this.state.groupBy];
 		const skills = this.state.resumeData.skills;
-		const skillGroups = [];
-		for ( const [tech,value] of Object.entries( this.state.skillLabelMap ) ) {
-			skillGroups.push(<SkillGroup key={tech} skills={skills} groupBy={this.state.groupBy} groupKey={tech} label={value} />);
+		let skillGroups = [];
+		for (const [key,value] of Object.entries(labels)) {
+			skillGroups.push(<SkillGroup key={key} skills={skills} groupBy={this.state.groupBy} groupKey={key} label={value} />);
 		}
 
 		return (
