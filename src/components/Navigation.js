@@ -1,18 +1,15 @@
 import React from 'react';
 
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import styled from "styled-components";
 import BurgerMenu from './BurgerMenu';
 import CollapseMenu from './CollapseMenu';
 import NavBarLink from './NavBarLink';
 
 const FlexContainer = styled.div`
-  max-width: 120rem;
   display: flex;
-  margin: auto;
-  padding: 0 2rem;;
   justify-content: space-between;
-  height: 5rem;
+	height: 5rem;
 `;
 
 const NavLinks = styled(Nav)`
@@ -43,12 +40,13 @@ const BurgerWrapper = styled.div`
   margin: auto 0;
   @media (min-width: 769px) {
     display: none;
-  }
+	}
+	margin-left: auto;
 `;
 
 function Navigation(props) {
 	return (
-		<Container>
+		<div>
 			<Navbar bg="dark" variant="dark">
 				<Navbar.Brand href="/resume">
 					<div>
@@ -57,25 +55,26 @@ function Navigation(props) {
 					</div>
 				</Navbar.Brand>
 				<FlexContainer>
-					<NavLinks>
+					<NavLinks className="float-right">
 						<NavBarLink to="/" text="Summary"/>
 						<NavBarLink to="/skills" text="Skills"/>
 						<NavBarLink to="/experience" text="Experience"/>
 						<NavBarLink to="/contact" text="Contact"/>
 					</NavLinks>
-					<BurgerWrapper>
-            <BurgerMenu
-              navbarState={props.navbarState} 
-              handleNavbar={props.handleNavbar}
-            />
-          </BurgerWrapper>
+					
 				</FlexContainer>
+				<BurgerWrapper>
+					<BurgerMenu
+						navbarState={props.navbarState} 
+						handleNavbar={props.handleNavbar}
+					/>
+				</BurgerWrapper>
 			</Navbar>
 			<CollapseMenu 
         navbarState={props.navbarState} 
-        handleNavbar={props.handleNavbar}
+				handleNavbar={props.handleNavbar}
       />
-		</Container>
+		</div>
 	);
 }
 
