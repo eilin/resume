@@ -1,0 +1,180 @@
+{
+	"contact": {
+		"email": "don't include to avoid web scrapers",
+		"linkedIn": "linkedin.com/in/edwardidlin",
+		"phone": "don't include to avoid web scrapers"
+	},
+	"summary": "TODO add summary",
+	"skills": [
+		{
+			"isExample": true,
+			"techLabel": "language|framework|database|testing|misc",
+			"name": "tech-name",
+			"level": "novice|familiar|competent|proficient|expert"
+		},
+		{
+			"techLabel": "language",
+			"name": "Java",
+			"level": "expert"
+		},
+		{
+			"techLabel": "language",
+			"name": "Python",
+			"level": "proficient"
+		},
+		{
+			"techLabel": "language",
+			"name": "Javascript",
+			"level": "competent"
+		},
+		{
+			"techLabel": "language",
+			"name": "SQL",
+			"level": "competent"
+		},
+		{
+			"techLabel": "language",
+			"name": "C++",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "language",
+			"name": "HTML",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "language",
+			"name": "CSS",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "language",
+			"name": "Bash",
+			"level": "novice"
+		},
+		{
+			"techLabel": "language",
+			"name": "C",
+			"level": "novice"
+		},
+		{
+			"techLabel": "framework",
+			"name": "Spring Boot",
+			"level": "proficient"
+		},
+		{
+			"techLabel": "framework",
+			"name": "Express",
+			"level": "competent"
+		},
+		{
+			"techLabel": "framework",
+			"name": "Angular",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "framework",
+			"name": "React",
+			"level": "competent"
+		},
+		{
+			"techLabel": "testing",
+			"name": "JUnit",
+			"level": "proficient"
+		},
+		{
+			"techLabel": "testing",
+			"name": "Mockito",
+			"level": "proficient"
+		},
+		{
+			"techLabel": "testing",
+			"name": "Jest",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "testing",
+			"name": "Mocha",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "database",
+			"name": "Oracle",
+			"level": "competent"
+		},
+		{
+			"techLabel": "database",
+			"name": "PostgreSQL",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "database",
+			"name": "MongoDB",
+			"level": "competent"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Git",
+			"level": "proficient"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Linux",
+			"level": "competent"
+		},
+		{
+			"techLabel": "misc",
+			"name": "AWS",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Node.js",
+			"level": "competent"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Docker",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "misc",
+			"name": "NGINX",
+			"level": "novice"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Kafka",
+			"level": "novice"
+		},
+		{
+			"techLabel": "misc",
+			"name": "Typescript",
+			"level": "familiar"
+		},
+		{
+			"techLabel": "misc",
+			"name": "0x.js",
+			"level": "novice"
+		}
+	],
+	"experience": [
+			{
+				"isExample": true,
+				"startMonth": 1,
+				"startYear": 2015,
+				"isCurrentJob": false,
+				"endMonth": 12,
+				"endYear": 2020,
+				"company": "company name",
+				"position": "job position",
+				"city": "Davis",
+				"state": "CA",
+				"description": "High level overview.",
+				"achievements": [
+					"Did cool thing.",
+					"Fixed important thing."
+				]
+			}
+	]
+}
