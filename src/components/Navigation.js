@@ -50,8 +50,13 @@ function Navigation(props) {
 	return (
 		<Container>
 			<Navbar bg="dark" variant="dark">
+				<Navbar.Brand href="/resume">
+					<div>
+						<span >Edward Lin</span>
+						<span className="cursive-nav-brand">Résumé</span>
+					</div>
+				</Navbar.Brand>
 				<FlexContainer>
-					<Navbar.Brand href="/resume">Edward Lin | Résumé</Navbar.Brand>
 					<NavLinks>
 						<NavBarLink to="/" text="Summary"/>
 						<NavBarLink to="/skills" text="Skills"/>

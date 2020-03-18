@@ -15,3 +15,12 @@ code {
 a {
 	outline: 0;
 }
+
+.cursive-nav-brand {
+	font-family: 'Charmonman', cursive;
+	font-size: 200%;
+	float: left;
+	margin-left: -5px;
+	text-align: left;
+	width: 100%;
+}
