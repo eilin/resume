@@ -6,17 +6,26 @@ class Skills extends Component {
 		groupBy: 'techLabel'
 	}
 
+	// TODO move data out
+	techLabelMap = {
+		"language": "Programming Languages",
+		"framework": "Frameworks",
+		"testing": "Testing",
+		"database": "Database Systems",
+		"misc": "Miscellaneous"
+	}
+
 	render() {
 		const resumeData = require('../../data/resume.json');
 		const skills = resumeData.skills;
+		const skillGroups = [];
+		for ( const [tech,value] of Object.entries( this.techLabelMap ) ) {
+			skillGroups.push(<SkillGroup key={tech} skills={skills} groupBy={this.state.groupBy} groupKey={tech} label={value} />);
+		}
 
 		return (
 			<>
-				<SkillGroup skills={skills} groupBy={this.state.groupBy} groupKey='language' label="Programming Languages" />
-				<SkillGroup skills={skills} groupBy={this.state.groupBy} groupKey='framework' label="Frameworks" />
-				<SkillGroup skills={skills} groupBy={this.state.groupBy} groupKey='testing' label="Testing" />
-				<SkillGroup skills={skills} groupBy={this.state.groupBy} groupKey='database' label="Database Systems" />
-				<SkillGroup skills={skills} groupBy={this.state.groupBy} groupKey='misc' label="Miscellaneous" />
+				{skillGroups}
 			</>
 		);
 	}

@@ -12,10 +12,11 @@ class SkillGroup extends Component {
 	}
 
 	render() {
+		console.log("filtering by " + this.state.groupBy + ", " + this.state.groupKey)
 		let group = this.state.skills.filter((skill) => skill[this.state.groupBy] === this.state.groupKey);
 		group.sort((a, b) => a.name < b.name ? -1 : 1)
 		const listItems = group.map((skill) =>
-			<li>{skill.name}</li>
+			<li key={'key-'+skill.name}>{skill.name}</li>
 		);
 		return (
 			<>
