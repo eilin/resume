@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See the resume hosted at eilin.github.io/resume
+See the resume hosted using [Github Pages](eilin.github.io/resume)
 
 ## Available Scripts
 
